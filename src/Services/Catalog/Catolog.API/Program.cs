@@ -1,3 +1,6 @@
+using Catolog.API.Data;
+using Catolog.API.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddScoped<ICatalogContext, CatalogContext>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
@@ -18,6 +23,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.UseRouting();
+app.UseEndpoints(endpoint => { 
+ endpoint.MapControllers();
+});
 
 app.Run();
