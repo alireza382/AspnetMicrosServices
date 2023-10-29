@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount", "Services\Discou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount.API", "..\..\run-aspnetcore-microservices\src\Services\Discount\Discount.API\Discount.API.csproj", "{BBCC12B6-96B5-41D5-8053-A14F732A1C64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discount.Grpc", "Services\Discount\Discount.Grpc\Discount.Grpc.csproj", "{1A1B742E-6FDD-4495-877C-D2C29253FB03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{BBCC12B6-96B5-41D5-8053-A14F732A1C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBCC12B6-96B5-41D5-8053-A14F732A1C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBCC12B6-96B5-41D5-8053-A14F732A1C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A1B742E-6FDD-4495-877C-D2C29253FB03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A1B742E-6FDD-4495-877C-D2C29253FB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A1B742E-6FDD-4495-877C-D2C29253FB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A1B742E-6FDD-4495-877C-D2C29253FB03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +55,7 @@ Global
 		{4D93A873-A3C3-461E-8757-DD9BA09B6D46} = {998E213B-ECEF-4E3C-8194-C2B4D8812376}
 		{12FA11F6-89A6-4C86-8EDC-2D01D54D28D4} = {4D93A873-A3C3-461E-8757-DD9BA09B6D46}
 		{BBCC12B6-96B5-41D5-8053-A14F732A1C64} = {4D93A873-A3C3-461E-8757-DD9BA09B6D46}
+		{1A1B742E-6FDD-4495-877C-D2C29253FB03} = {4D93A873-A3C3-461E-8757-DD9BA09B6D46}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48EBDDA4-7684-4A65-926D-06E28CDA1494}
